@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import logger from '../config/logger.js';
+import logger from '../config/logger';
 
 export function routeNotFound(req: Request, res: Response, next: NextFunction) {
     const error = new Error(`Route not found: ${req.method} ${req.path}`);

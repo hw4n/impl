@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+// import chalk from 'chalk';
 
 function timestamp() {
     const d = new Date();
@@ -6,23 +6,23 @@ function timestamp() {
 }
 
 export function info(message: string) {
-    console.log(chalk.blue(`${timestamp()} [INFO] ${message}`));
+    console.log(`${timestamp()} [INFO] ${message}`);
 }
 
 export function warning(message: string) {
-    console.log(chalk.yellow(`${timestamp()} [WARN] ${message}`));
+    console.log(`${timestamp()} [WARN] ${message}`);
 }
 
 export function error(message: string) {
-    console.error(chalk.red(`${timestamp()} [ERROR] ${message}`));
+    console.error(`${timestamp()} [ERROR] ${message}`);
 }
 
 export function success(message: string) {
-    console.log(chalk.green(`${timestamp()} [DONE] ${message}`));
+    console.log(`${timestamp()} [DONE] ${message}`);
 }
 
 export function debug(message: string) {
-    console.log(chalk.bgCyan(`${timestamp()} [DEBUG] ${message}`));
+    console.log(`${timestamp()} [DEBUG] ${message}`);
 }
 
 export default {

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import logger from '../config/logger.js';
+import logger from '../config/logger';
 
 export function loggingHandler(req: Request, res: Response, next: NextFunction) {
     logger.info(`${req.method} ${req.path} ${req.socket.remoteAddress}`);
